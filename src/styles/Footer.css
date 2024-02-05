@@ -1,0 +1,188 @@
+/* Base styles for larger screens */
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center; /* Center the content horizontally */
+  padding: 30px;
+  color: #ffffff;
+  background-color: #000000;
+  border-top: 1px solid #e5e5e5;
+}
+
+.footer > * {
+  flex: 1 100%;
+}
+
+.contact {
+  color: #fff;
+}
+
+.footer__addr {
+  margin-right: 2em;
+  margin-bottom: 2em;
+}
+
+.footer__logo {
+  font-family: "Fanwood Text", serif;
+  font-weight: 400;
+  text-transform: lowercase;
+  font-size: 1.5rem;
+}
+
+.footer__addr h2 {
+  margin-top: 1.3em;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.nav__title,
+.footer address {
+  font-weight: 400;
+  font-size: 15px;
+}
+.nav__title{
+color: chocolate;
+font-weight: bolder;
+}
+
+.footer__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  max-width: max-content;
+  background-color: rgba(33, 33, 33, 0.07);
+  border-radius: 100px;
+  color: #ffffff;
+  line-height: 0;
+  margin: 0.6em 0;
+  font-size: 1rem;
+  padding: 0 1.3em;
+}
+
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer li {
+  line-height: 2em;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer__nav {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.footer__nav > * {
+  flex: 1 50%;
+  margin-right: 1.25em;
+}
+
+.nav__ul a {
+  color: #999;
+}
+
+.legal {
+  color: #999;
+  text-align: center;
+}
+
+.legal__links {
+  align-items: center;
+  text-align: center;
+}
+
+.heart {
+  color: #ffffff;
+}
+
+/* Media queries */
+@media screen and (min-width: 24.375em) {
+  .legal .legal__links {
+    margin-left: auto;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 40.375em) {
+  .footer__nav > * {
+    flex: 1;
+  }
+
+  .nav__item--extra {
+    flex-grow: 2;
+  }
+
+  .footer__addr {
+    flex: 1 0;
+  }
+
+  .footer__nav {
+    flex: 2 0;
+  }
+}
+
+@media screen {
+  .footer {
+    flex-flow: column wrap;
+    padding: 30px 15px;
+    text-align: center;
+  }
+
+  .footer__addr {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+
+  .footer__logo {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .footer__addr h2 {
+    text-align: center;
+    margin-top: 1em;
+  }
+
+  .footer__nav,
+  .legal {
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 1em;
+  }
+
+  .footer__nav > *,
+  .legal__links {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+
+  /* Center the legal links specifically for mobile screens */
+  @media screen and (max-width: 40.375em) {
+    .legal {
+      justify-content: center;
+      text-align: center;
+    }
+  }
+
+  @media screen and (min-width: 40.375em) {
+    .footer {
+      flex-flow: row wrap;
+    }
+
+    .footer__nav > *,
+    .legal__links {
+      text-align: center;
+    }
+
+    .legal {
+      text-align: center;
+    }
+  }
+}

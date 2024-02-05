@@ -1,0 +1,131 @@
+.service {
+  background-color: #F5F5F5;
+}
+
+.service__grid,
+.project__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 4rem;
+}
+
+.service__card {
+  display: grid;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service__card i {
+  font-size: 4rem;
+  color: #000000;
+  padding-top: 5px;
+}
+
+.service__card h4 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  align-items: start;
+  color: #000000;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service__card p {
+  color: #000000;
+  position: relative;
+  align-items: start;
+}
+
+.service__card .read__more {
+  width: max-content;
+  padding: 0.5rem 1rem;
+  color: #000000;
+  font-size: 0.8rem;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.05);
+  cursor: pointer;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.section__container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 3rem 1rem;
+}
+
+.section__title {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: left;
+  color: #000000;
+  align-items: center;
+}
+
+.section__title span {
+  color: #303030;
+}
+
+.section__subtitle {
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (min-width: 24.375em) {
+  .section__title {
+    font-size: 1.5rem; /* Adjust title font size for smaller screens */
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 40.375em) {
+  .section__title {
+    font-size: 1.5rem; /* Adjust title font size for smaller screens */
+    text-align: center;
+  }
+}
+
+/* Mobile screens */
+@media screen and (max-width: 767px) {
+  .service__grid,
+  .project__grid {
+    grid-template-columns: 1fr; /* Set to a single column for smaller screens */
+    margin-top: 2rem; /* Adjust margin as needed */
+  }
+
+  .service__card {
+    padding: 1.5rem; /* Adjust padding for smaller cards */
+  }
+
+  .section__title {
+    font-size: 1.5rem; /* Adjust title font size for smaller screens */
+    text-align: center;
+  }
+}
+
+/* Larger mobile screens and small tablets */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* Adjust styles for screens between 768px and 991px width */
+}
+
+/* Tablets and small desktop screens */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  /* Adjust styles for screens between 992px and 1199px width */
+}

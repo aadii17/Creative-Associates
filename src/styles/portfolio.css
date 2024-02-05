@@ -1,0 +1,103 @@
+.portfolio-parent {
+    margin-top: 60px;
+}
+.portfolio-title {
+    padding: 20px;
+    text-align: center;
+}
+.feature-project-parent {
+    width: 100vw;
+    height: 25vw;
+}
+.feature-project-bg {
+    position: absolute;
+    z-index: -1;
+    filter: brightness(20%);
+    width: 100vw;
+    height: 25vw;
+    object-fit: cover;
+}
+.feature-project-content {
+    width: 75vw;
+    height: 25vw;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+}
+.feature-project-content-img {
+    width: 35vw;
+    height: auto;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+.feature-project-content .description {
+    font-size: 16px;
+    text-align: end;
+    color: white;
+    width: 35vw;
+}
+.feature-project-content .description p {
+    margin-top: 20px;
+    font-size: 16px;
+    background-color: var(--black);
+    padding: 20px;
+}
+.feature-project-content .description .btn-parent {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.feature-project-content .description .btn {
+    margin-top: 20px;
+    padding: 6px 4px;
+    width: fit-content;
+    height: fit-content;
+}
+/* .portfolio-gallery {
+    width: 100vw;
+    height: fit-content;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+} */
+
+/* Tablet */
+@media only screen and (max-width : 1024px) {
+    .feature-project-bg {
+        text-align: center;
+        display: none;
+    }
+    .feature-project-content {
+        background-color: var(--black);
+        width: 100vw;
+        text-align: center;
+        height: fit-content;
+        display: block;
+    }
+    .feature-project-content-img {
+        width: 100vw;
+    }
+    .feature-project-content .description {
+        display: block;
+        text-align: center;
+        height: fit-content;
+        width: 100%;
+    }
+    .feature-project-content .description h2 {
+        margin-top: 20px;
+        margin-bottom: -20px;
+        color: white;
+    }
+    .feature-project-content .description .btn-parent {
+        margin-top: -20px;
+        margin-bottom: 30px;
+        justify-content: center;
+    }
+    
+}
+
+/* Mobile */
+@media only screen and (max-width : 480px) {
+    
+}

@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Fanwood+Text&family=Source+Sans+Pro:wght@600&display=swap');
+
+/* Mixin */
+.white-gradient {
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+/* Variables */
+.animationSpeed {
+  animation-duration: 20s;
+}
+
+/* Animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+.h {
+  font-family: 'Fanwood Text', serif;
+  color: #212121;
+  font-size: xx-large;
+  text-decoration: solid;
+}
+.b {
+  font-family: 'Fanwood Text', serif;
+  color: #212121;
+  font-size: xx-large;
+  text-decoration: solid;
+  font-weight: bolder;
+}
+
+/* Styling */
+.slider {
+  background-color: white;
+  background: white;
+  box-shadow: 0 10px 20px -5px rgba(253, 253, 253, 0.125);
+  height: 250px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.slider::before,
+.slider::after {
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slide-track {
+  animation: scroll 20s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+
+.slide:last-child {
+  margin-right: initial;
+}
+
+.brands{
+  height: 50px;
+  width: 125px;   
+}
+@media (max-width: 768px) {
+  .slider {
+    height: auto;
+  }
+
+  .h {
+    font-size: large;
+    align-items: center;
+    text-align: center;
+  }
+
+  .b {
+    font-size: x-large;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .slide {
+    width: 150px;
+  }
+
+  .slide-track {
+    width: calc(150px * 14);
+    animation-duration: 20s; /* Adjust animation speed for smaller width */
+  }
+  
+.brands{
+  height: 50px;
+  width: 125px;   
+}
+}

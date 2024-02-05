@@ -1,0 +1,53 @@
+.carousel {
+    transition: 0.5s;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    position: relative;
+}
+.carousel img {
+    aspect-ratio: 16/9;
+    width: 50vw;
+    height: auto;
+    object-fit: cover;
+}
+.carousel .carousel-slide {
+    transition: 0.8s;
+}
+.carousel .carousel-slide:hover {
+    transition: 0.8s;
+    cursor: pointer;
+    filter: brightness(70%);
+}
+.thumb h1 {
+    z-index: 100;
+    cursor: pointer;
+    transition: 0.8s;
+    position: absolute;
+    color: white;
+    top: 50%;
+}
+.thumb h1:hover{
+    transition: 0.8s;
+    opacity: 0.5;
+}
+.thumb h1:nth-child(1) {
+    left: 2%;
+}
+.thumb h1:nth-child(2) {
+    right: 2%;
+}
+
+/* Tablet */
+@media only screen and (max-width : 1024px) {
+    .carousel img {
+        width: 100vw;
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width : 480px) {
+    
+}
